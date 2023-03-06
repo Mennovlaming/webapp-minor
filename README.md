@@ -1,3 +1,9 @@
-# webapp-minor
+# Webapp from scratch Rijksmuseum
 
-# readme test
+## Inhoudsopgave
+- Opdracht
+- Omschrijving
+- Activity diagram
+- Code
+
+## Opdracht
