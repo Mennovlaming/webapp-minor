@@ -1,5 +1,7 @@
 import fetchData from "./fetchdata.js"
 import $ from "./querySelector.js"
+import {addHashEvent} from "./articleHandler.js";
+import './search.js';
 
 // variables
 const title = $('h2')
@@ -12,7 +14,9 @@ const title1 = $('h1')
 
 
 // logica
-fetchData()
+addHashEvent();
+fetchData();
+
 
 // functions
 

@@ -5,20 +5,18 @@ const apiURL = 'https://www.rijksmuseum.nl/api/nl/collection?key=wJjmayJK'
 const loader = document.querySelector(".loadingstate")
 const section = $('section:nth-of-type(2')
 
-
-
 function fetchData (){
-    const artData = fetch(apiURL)
+    fetch(apiURL)
                     .then(response => response.json())
                     .then(data => {
                     
                     loader.style.display = 'none';
 
                     // changeHTML(data) 
-                    console.log(data)
-
                     
-                        renderData(data)
+                        // Set global state of articles;
+                        window.articles = data.artObjects;
+                        renderData(window.articles);
                 
                     })
 

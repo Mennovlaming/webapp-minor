@@ -12,12 +12,13 @@
     <script defer type="module" src="modules/scripts.js"></script>
 </head>
 <body>
-    <h1>Rijksmuseum</h1>
+    <h1>Rijksmuseum online</h1>
     <!-- Search bar form -->
     <form>
-        <input type="text" placeholder="Search...">
-        <button type="submit">Search</button>
+        <input type="text" placeholder="Search..." oninput="handleSearchChange(this.value)">
+        
       </form>
+    
     <!-- Eerste section mag later weg, 1e is voorbeeld, 2e is leeg en 3e is loading state -->
     <section class="loadingstate">
 
