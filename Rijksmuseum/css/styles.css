@@ -39,7 +39,6 @@ section {
 section article {
     width: 15em;
     height: 25em;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -74,16 +73,17 @@ section article img {
 .loadingstate {
     border-radius: 5px;
     background-size: 200% 100%;
+    position: relative;
 }
 
-.loadingstate h2,
-.loadingstate h3,
+
 .loadingstate p
  {
-    height: 2em;
-    width: 10em;
-    background: #dcdcdc;
-    background: linear-gradient(110deg, #c1c1c1 8%, #dbdbdb 18%, #c0c0c0 33%);
+    position: absolute;
+    bottom: 0;
+    height: 5em;
+    width: 100%;
+    background: linear-gradient(110deg, #858585 8%, #878787 18%, #797979 33%);
     background-size: 200% 100%;
     animation: 1.5s shine linear infinite;
 }
@@ -92,16 +92,17 @@ section article img {
 /* class toevoegen die dit weghaald, skeleton als standaard gebruiken. */
 .loadingstate div{
     height: 21em;
-    width: 20em;
-    border-bottom-left-radius: .5em;
-    border-bottom-right-radius: .5em;
+    width: 100%;
+  
 
     background: #eee;
     background: linear-gradient(110deg, #c1c1c1 8%, #dbdbdb 18%, #c0c0c0 33%);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+   
     background-size: 200% 100%;
     animation: 1.5s shine linear infinite;
+}
+.rood {
+    background-color: red;
 }
 
 /* detailpagina */
